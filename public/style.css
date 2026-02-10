@@ -1,0 +1,195 @@
+/* Light retro 90s theme for i18n-bg.dev */
+
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+:root {
+  --background: #f5f0e8;
+  --foreground: #1a1a2e;
+  --accent: #006666;
+  --code-border: #c0c0c0;
+}
+
+body {
+  font-family: "Literata", "Georgia", serif;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 102, 102, 0.02) 100%
+    );
+}
+
+/* Classic 90s inset border on the container */
+.container {
+  border-right: 2px solid #a0a0a0;
+  border-left: none;
+}
+
+/* Header logo — retro teal pill */
+.logo {
+  background: var(--accent);
+  color: #f5f0e8;
+  border: 2px outset #008080;
+}
+
+.header__logo::after {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent) 2px,
+    transparent 0,
+    transparent 10px
+  );
+}
+
+/* Links — classic web blue-teal */
+a {
+  color: #006666;
+}
+
+a:visited {
+  color: #004d4d;
+}
+
+a:hover {
+  color: #009999;
+}
+
+/* Buttons — 90s beveled look */
+button {
+  color: var(--accent);
+  border: 2px outset #b0b0b0;
+  background: #e8e0d0;
+}
+
+button:hover {
+  background: #d8d0c0;
+  border-style: inset;
+}
+
+/* Navigation menu links */
+.menu__trigger {
+  color: var(--accent);
+}
+
+.menu__dropdown {
+  background: var(--background);
+  border: 2px outset #b0b0b0;
+  box-shadow: 2px 2px 0 #a0a0a0;
+  color: var(--accent);
+}
+
+/* Post titles */
+.post-title {
+  color: #004d4d;
+  border-bottom: 3px dotted #008080;
+}
+
+.post-title::after {
+  border-bottom-color: #008080;
+}
+
+/* Images — retro beveled border */
+img {
+  border: 3px outset #b0b0b0;
+  background: #ffffff;
+  padding: 4px;
+}
+
+/* Code blocks — light gray like old terminal */
+pre {
+  background: #eae6de !important;
+  border: 2px inset #b0b0b0 !important;
+  color: var(--foreground);
+}
+
+code {
+  color: #004d4d;
+  background: rgba(0, 102, 102, 0.06);
+  border-color: #c0c0c0;
+}
+
+.highlight {
+  border: 2px inset #b0b0b0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  background: rgba(0, 102, 102, 0.03);
+}
+
+blockquote::before {
+  color: #008080;
+}
+
+/* Tables — classic grid look */
+table,
+th,
+td {
+  border: 2px solid #a0a0a0;
+}
+
+th {
+  background: #e0dcd0;
+  color: var(--foreground);
+}
+
+/* Horizontal rules */
+hr {
+  background: #008080;
+  height: 2px;
+}
+
+/* Footer */
+.footer {
+  opacity: 0.7;
+  border-top: 1px solid #c0c0c0;
+}
+
+/* Input fields — 90s inset style */
+input,
+textarea,
+select {
+  background: #ffffff;
+  border: 2px inset #b0b0b0;
+  color: var(--foreground);
+}
+
+/* Fieldsets */
+fieldset {
+  border: 2px groove #b0b0b0;
+}
+
+/* List markers */
+li::marker {
+  color: #008080;
+}
+
+/* figcaption */
+figure figcaption {
+  background: var(--accent);
+  color: #f5f0e8;
+}
+
+/* Scrollbar styling for retro feel */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d0ccc0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0;
+  border: 2px outset #b0b0b0;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(0, 102, 102, 0.25);
+  color: var(--foreground);
+}

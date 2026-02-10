@@ -1,0 +1,29 @@
+baseURL = 'https://l10n-bg.dev/'
+languageCode = 'bg'
+title = 'Информация относно преводи на софтуер на Български'
+
+
+[module]
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal/v4'
+
+[languages]
+  [languages.bg]
+    languageName = "Български"
+    title = "Българска локализация на софтуер"
+
+    [languages.bg.params]
+
+      [languages.bg.params.logo]
+        logoText = "Българска локализация на софтурер"
+        logoHomeLink = "/"
+
+    [[languages.bg.menu.main]]
+      identifier = "kde"
+      name = "KDE"
+      url = "/kde/"
+
+    [[languages.bg.menu.main]]
+      identifier = "imperative-mood-ui"
+      name = "Повелително наклонение"
+      url = "/imperative-mood-ui/"
