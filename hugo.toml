@@ -1,5 +1,6 @@
 baseURL = 'https://l10n-bg.dev/'
 languageCode = 'bg'
+defaultContentLanguage = 'bg'
 title = 'Българска локализация на софтуер'
 
 [languages]
