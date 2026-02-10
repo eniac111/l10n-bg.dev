@@ -13,11 +13,6 @@ title = 'Българска локализация на софтуер'
       url = "/kde/"
 
     [[languages.bg.menu.main]]
-      identifier = "imperative-mood-ui"
-      name = "Повелително наклонение"
-      url = "/imperative-mood-ui/"
-
-    [[languages.bg.menu.main]]
       identifier = "posts"
       name = "Публикации"
       url = "/posts/"
@@ -28,11 +23,11 @@ title = 'Българска локализация на софтуер'
       url = "https://kaksepishe.com/"
 
     [[languages.bg.menu.footer]]
+      identifier = "bgoffice"
+      name = "Проект БГ Сфис"
+      url = "https://bgoffice.sourceforge.net/"
+
+    [[languages.bg.menu.footer]]
       identifier = "BgCyrilic"
       name = "Българската кирилица"
       url = "https://cyrillic.bgweb.bg/"
-
-    [[languages.bg.menu.footer]]
-      identifier = "transifex"
-      name = "Lorem Ipsum"
-      url = "https://www.ipsum/"
