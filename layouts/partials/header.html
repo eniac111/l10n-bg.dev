@@ -1,0 +1,17 @@
+<a class="skip-nav" href="#content">Към съдържанието</a>
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </div>
+  </div>
+  {{ with .Site.Menus.main }}
+  <nav class="header-nav">
+    <div class="container">
+      {{ range . }}
+      <a href="{{ .URL | absURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ end }}
+</header>

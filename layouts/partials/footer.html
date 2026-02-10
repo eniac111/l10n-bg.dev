@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Страници</h4>
+        <ul>
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ресурси</h4>
+        <ul>
+          {{ range .Site.Menus.footer }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>За сайта</h4>
+        <ul>
+          <li>Създаден с <a href="https://gohugo.io/">Hugo</a></li>
+          <li><a href="{{ "index.xml" | absURL }}">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; {{ now.Year }} {{ .Site.Title }}</p>
+  </div>
+</footer>

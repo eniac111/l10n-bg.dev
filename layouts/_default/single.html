@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ if or .Date .Params.author }}
+  <p class="meta">
+    {{- with .Params.author }}{{ . }}{{ end -}}
+    {{- if and .Params.author .Date }} &middot; {{ end -}}
+    {{- if .Date }}{{ .Date.Format "2006-01-02" }}{{ end -}}
+  </p>
+  {{ end }}
+  {{ with .Params.tags }}
+  <p class="tags">
+    {{- range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ (printf "/tags/%s/" $t) | absLangURL }}">{{ $t }}</a>{{ end -}}
+  </p>
+  {{ end }}
+  {{ .Content }}
+</article>
+{{ end }}

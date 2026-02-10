@@ -1,22 +1,11 @@
 baseURL = 'https://l10n-bg.dev/'
 languageCode = 'bg'
-title = 'Информация относно преводи на софтуер на Български'
-
-
-[module]
-[[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal/v4'
+title = 'Българска локализация на софтуер'
 
 [languages]
   [languages.bg]
     languageName = "Български"
     title = "Българска локализация на софтуер"
-
-    [languages.bg.params]
-
-      [languages.bg.params.logo]
-        logoText = "Българска локализация на софтурер"
-        logoHomeLink = "/"
 
     [[languages.bg.menu.main]]
       identifier = "kde"
@@ -27,3 +16,18 @@ title = 'Информация относно преводи на софтуер 
       identifier = "imperative-mood-ui"
       name = "Повелително наклонение"
       url = "/imperative-mood-ui/"
+
+    [[languages.bg.menu.footer]]
+      identifier = "tp-bg"
+      name = "Преводачески проекти"
+      url = "https://l10n.kde.org/team-infos.php?teamcode=bg"
+
+    [[languages.bg.menu.footer]]
+      identifier = "weblate"
+      name = "Weblate"
+      url = "https://hosted.weblate.org/"
+
+    [[languages.bg.menu.footer]]
+      identifier = "transifex"
+      name = "Transifex"
+      url = "https://www.transifex.com/"

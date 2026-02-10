@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ if .Content }}
+  <div{{ if .Params.framed }} class="framed"{{ end }}>
+    {{ .Content }}
+  </div>
+  {{ end }}
+{{ end }}

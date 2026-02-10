@@ -1,204 +1,59 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  
-    <title>Повелително наклонение в потребителския интерфейс :: Българска локализация на софтуер</title>
-  
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Оригинална публикация от М. Балабанов, архивирана от web.archive.org.
-Анотация В статията е предложен подход за употребата на повелително наклонение и съществителни за действия в потребителския интерфейс. Защитава се позицията, че мястото на повелителното наклонение е само в указанията от автора на програмата към потребителя, но не и в елементите, чрез които потребителят управлява програмата.
-Предлаганият подход (бутони и менюта в стил „Отваряне на файл&quot;) е една от основните две възможности. Другата са заповедните формулировки („Отвори файл&quot;). Изборът до голяма степен зависи от преводача и целевата аудитория. Всеки от двата подхода се опира на ценности и предположения, които може да са уместни в един контекст и неуместни в друг. И двата имат поддръжници сред специалистите както по потребителски интерфейс, така и по български език.
-" />
-<meta name="keywords" content="" />
-
-  <meta name="robots" content="noodp" />
-
-<link rel="canonical" href="http://localhost:1313/imperative-mood-ui/" />
-
-
-
-
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
-
-  
-  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
-
-
-
-
+<title>Повелително наклонение в потребителския интерфейс - Българска локализация на софтуер</title>
+<meta name="description" content="">
 <link rel="stylesheet" href="http://localhost:1313/style.css">
-
-
-<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-
-
-<meta name="twitter:card" content="summary" />
-
-
-
-<meta property="og:locale" content="bg" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Повелително наклонение в потребителския интерфейс">
-<meta property="og:description" content=" Оригинална публикация от М. Балабанов, архивирана от web.archive.org.
-Анотация В статията е предложен подход за употребата на повелително наклонение и съществителни за действия в потребителския интерфейс. Защитава се позицията, че мястото на повелителното наклонение е само в указанията от автора на програмата към потребителя, но не и в елементите, чрез които потребителят управлява програмата.
-Предлаганият подход (бутони и менюта в стил „Отваряне на файл&quot;) е една от основните две възможности. Другата са заповедните формулировки („Отвори файл&quot;). Изборът до голяма степен зависи от преводача и целевата аудитория. Всеки от двата подхода се опира на ценности и предположения, които може да са уместни в един контекст и неуместни в друг. И двата имат поддръжници сред специалистите както по потребителски интерфейс, така и по български език.
-" />
-<meta property="og:url" content="http://localhost:1313/imperative-mood-ui/" />
-<meta property="og:site_name" content="Българска локализация на софтуер" />
-
-  <meta property="og:image" content="http://localhost:1313/og-image.png">
-
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-
-
-  <meta property="article:published_time" content="2026-02-10 00:00:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-
-
+<link rel="canonical" href="http://localhost:1313/imperative-mood-ui/">
 
 
 </head>
 <body>
-
-
-<div class="container">
-
-  <header class="header">
-  <div class="header__inner">
-    <div class="header__logo">
-      <a href="/">
-  <div class="logo">
-    Българска локализация на софтурер
-  </div>
-</a>
-
+  <a class="skip-nav" href="#content">Към съдържанието</a>
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <a class="site-title" href="http://localhost:1313/">Българска локализация на софтуер</a>
     </div>
-    
-      <ul class="menu menu--mobile">
-  <li class="menu__trigger">Menu&nbsp;▾</li>
-  <li>
-    <ul class="menu__dropdown">
-      
-        
-          <li><a href="/kde/">KDE</a></li>
-        
-      
-        
-          <li><a href="/imperative-mood-ui/">Повелително наклонение</a></li>
-        
-      
-      
-    </ul>
-  </li>
-</ul>
-
-    
-    
   </div>
   
-    <nav class="navigation-menu">
-  <ul class="navigation-menu__inner menu--desktop">
-    
+  <nav class="header-nav">
+    <div class="container">
       
-        
-          <li><a href="/kde/" >KDE</a></li>
-        
+      <a href="http://localhost:1313/kde/">KDE</a>
       
-        
-          <li><a href="/imperative-mood-ui/" >Повелително наклонение</a></li>
-        
+      <a href="http://localhost:1313/imperative-mood-ui/">Повелително наклонение</a>
       
-    
-  </ul>
-</nav>
-
+    </div>
+  </nav>
   
 </header>
 
-
-  <div class="content">
+  <main id="content" class="container">
     
-<article class="post">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/imperative-mood-ui/">Повелително наклонение в потребителския интерфейс</a>
-  </h1>
-  <div class="post-meta"><time class="post-date">2026-02-10</time><span class="post-author">Михаил Балабанов</span></div>
-
+<article>
+  <h1>Повелително наклонение в потребителския интерфейс</h1>
   
-    <span class="post-tags">
-      
-      #<a href="http://localhost:1313/tags/%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/">превод</a>&nbsp;
-      
-      #<a href="http://localhost:1313/tags/ui/">UI</a>&nbsp;
-      
-      #<a href="http://localhost:1313/tags/%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/">граматика</a>&nbsp;
-      
-    </span>
+  <p class="meta">Михаил Балабанов &middot; 2026-02-10</p>
   
   
-
-
+  <p class="tags"><a href="http://localhost:1313/tags/%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/">превод</a>, <a href="http://localhost:1313/tags/UI/">UI</a>, <a href="http://localhost:1313/tags/%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/">граматика</a></p>
   
-
-  <div class="post-content"><div>
-        <blockquote>
+  <blockquote>
 <p>Оригинална публикация от М. Балабанов, архивирана от <a href="https://web.archive.org/web/20100706191457/http://m-balabanov.hit.bg/Imperative/ar01s01.html">web.archive.org</a>.</p>
 </blockquote>
-<h2 id="анотация">Анотация<a href="#анотация" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="анотация">Анотация</h2>
 <p>В статията е предложен подход за употребата на повелително наклонение и съществителни за действия в потребителския интерфейс. Защитава се позицията, че мястото на повелителното наклонение е само в указанията от автора на програмата към потребителя, но не и в елементите, чрез които потребителят управлява програмата.</p>
 <p>Предлаганият подход (бутони и менюта в стил „Отваряне на файл&quot;) е една от основните две възможности. Другата са заповедните формулировки („Отвори файл&quot;). Изборът до голяма степен зависи от преводача и целевата аудитория. Всеки от двата подхода се опира на ценности и предположения, които може да са уместни в един контекст и неуместни в друг. И двата имат поддръжници сред специалистите както по потребителски интерфейс, така и по български език.</p>
-<h2 id="съдържание">Съдържание<a href="#съдържание" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="съдържание">Съдържание</h2>
 <ol>
 <li><a href="/imperative-mood-ui/#1-%d1%81%d1%8a%d1%89%d0%bd%d0%be%d1%81%d1%82-%d0%bd%d0%b0-%d0%bf%d1%80%d0%b5%d0%b4%d0%bb%d0%b0%d0%b3%d0%b0%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4">Същност на предлагания подход</a></li>
 <li><a href="/imperative-mood-ui/#2-%d0%b0%d1%80%d0%b3%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d0%b8-%d0%b7%d0%b0-%d0%b8-%d0%bf%d1%80%d0%be%d1%82%d0%b8%d0%b2">Аргументи „за&quot; и „против&quot;</a></li>
 <li><a href="/imperative-mood-ui/#3-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8-%d1%81%d1%8a%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d1%80%d0%b8-%d0%bf%d1%80%d0%b5%d0%b2%d0%be%d0%b4">Технически съображения при превод</a></li>
 </ol>
-<h2 id="1-същност-на-предлагания-подход">1. Същност на предлагания подход<a href="#1-същност-на-предлагания-подход" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="1-същност-на-предлагания-подход">1. Същност на предлагания подход</h2>
 <p>Предлаганата постановка е накратко следната:</p>
 <ul>
 <li>
@@ -250,7 +105,7 @@
   </tbody>
 </table>
 <p>Освен това много от надписите върху бутоните и в менютата по начало са съществителни или прилагателни имена, например „Tools&quot;, „Properties&quot;, „New&quot; – точно както върху бутоните на обикновените машини. При превод със заповедни форми в менютата и бутоните се смесват трите вида надписи – описания, заповеди и действия, извършвани от оператора. От друга страна надписването като в „обикновена машина&quot; унифицира формулировката на менютата и бутоните. Остава едно единствено просто правило – „само съществителни&quot; (по-точно: само именни словосъчетания), без смислови конфликти: „Четене на писмо&quot;, „Настройка на принтер&quot;, „Приемане&quot;, „Отхвърляне&quot;, „Потвърждаване&quot;, „Отказ&quot;, „Изход&quot;.</p>
-<h2 id="2-аргументи-за-и-против">2. Аргументи „за&quot; и „против&quot;<a href="#2-аргументи-за-и-против" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="2-аргументи-за-и-против">2. Аргументи „за&quot; и „против&quot;</h2>
 <p>По-долу са разгледани някои от основните аргументи за използване на повелително наклонение в менютата и бутоните, с които съм се сблъсквал при различни обсъждания на въпроса.</p>
 <ul>
 <li>
@@ -272,7 +127,7 @@
 <p>Освен това за много действия няма нужда да се използва по-дългото отглаголно съществително, защото има уместно обикновено съществително. То най-често е с един-два знака по-късо и от заповедната форма: записване – запиши – запис, преглеждане – прегледай – преглед, редактиране – редактирай – редакция и т.н.</p>
 </li>
 </ul>
-<h2 id="3-технически-съображения-при-превод">3. Технически съображения при превод<a href="#3-технически-съображения-при-превод" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="3-технически-съображения-при-превод">3. Технически съображения при превод</h2>
 <p>Сериозен технически аргумент за предпочитането на съществителни пред заповеди е следният: при локализиране на софтуер често един и същ низ се използва на много места в програмата за различни цели – в меню, в заглавие на прозорец, в подсказка и т.н. В такъв случай той трябва да се преведе възможно най-неутрално, за да пасва навсякъде. Обратното също е проблем. Ако няколко еднакви низа се изписват на различни места, трябва 1) те да се променят, за да могат да се различават, 2) да се стартира програмата (евентуално с прекомпилиране), 3) да се провери кое копие къде се показва и 4) след това да се извърши действителният превод. За един огромен езиков файл към сложна програма или пакет това е изключително трудоемко. Накрая, на български при заповедните форми винаги трябва да се разграничават глаголите от свършен и несвършен вид (дали „Write settings&quot; е за бутон „Запиши настройките <em>[сега]</em>&quot;, или за отметка „Записвай настройките <em>[винаги]</em>&quot;?).</p>
 <p>Описването на действията със съществителни обикновено пасва навсякъде, което силно улеснява преводача.</p>
 <div class="footnotes" role="doc-endnotes">
@@ -287,43 +142,45 @@
 </ol>
 </div>
 
-      </div></div>
-
-  
-
-  
-    
-
-  
 </article>
 
-  </div>
-
-  
-    <footer class="footer">
-  <div class="footer__inner">
-    
-      <div class="copyright">
-        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
-    
-      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Страници</h4>
+        <ul>
+          
+          <li><a href="http://localhost:1313/kde/">KDE</a></li>
+          
+          <li><a href="http://localhost:1313/imperative-mood-ui/">Повелително наклонение</a></li>
+          
+        </ul>
       </div>
+      <div class="footer-col">
+        <h4>Ресурси</h4>
+        <ul>
+          
+          <li><a href="https://www.transifex.com/">Transifex</a></li>
+          
+          <li><a href="https://hosted.weblate.org/">Weblate</a></li>
+          
+          <li><a href="https://l10n.kde.org/team-infos.php?teamcode=bg">Преводачески проекти</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>За сайта</h4>
+        <ul>
+          <li>Създаден с <a href="https://gohugo.io/">Hugo</a></li>
+          <li><a href="http://localhost:1313/index.xml">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Българска локализация на софтуер</p>
   </div>
 </footer>
-
-
-
-
-
-
-<script type="text/javascript" src="/bundle.min.js"></script>
-
-
-
-
-
-  
-</div>
 
 </body>
 </html>
