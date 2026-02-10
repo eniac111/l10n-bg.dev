@@ -17,17 +17,22 @@ title = 'Българска локализация на софтуер'
       name = "Повелително наклонение"
       url = "/imperative-mood-ui/"
 
-    [[languages.bg.menu.footer]]
-      identifier = "tp-bg"
-      name = "Преводачески проекти"
-      url = "https://l10n.kde.org/team-infos.php?teamcode=bg"
+    [[languages.bg.menu.main]]
+      identifier = "posts"
+      name = "Публикации"
+      url = "/posts/"
 
     [[languages.bg.menu.footer]]
-      identifier = "weblate"
-      name = "Weblate"
-      url = "https://hosted.weblate.org/"
+      identifier = "kaksepishe"
+      name = "Как се пише?"
+      url = "https://kaksepishe.com/"
+
+    [[languages.bg.menu.footer]]
+      identifier = "BgCyrilic"
+      name = "Българската кирилица"
+      url = "https://cyrillic.bgweb.bg/"
 
     [[languages.bg.menu.footer]]
       identifier = "transifex"
-      name = "Transifex"
-      url = "https://www.transifex.com/"
+      name = "Lorem Ipsum"
+      url = "https://www.ipsum/"
