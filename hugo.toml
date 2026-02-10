@@ -32,3 +32,8 @@ title = 'Българска локализация на софтуер'
       identifier = "BgCyrilic"
       name = "Българската кирилица"
       url = "https://cyrillic.bgweb.bg/"
+
+    [[languages.bg.menu.footer]]
+      identifier = "endof10"
+      name = "End of 10"
+      url = "https://endof10.org/bg/"
